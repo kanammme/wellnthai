@@ -41,7 +41,7 @@ const IntroSection = () => {
               Un cocon de bien-être au cœur de Nancy
             </h2>
             <p className="text-dark/80 text-lg leading-relaxed">
-              Chez Well & Thaï, chaque prestation est une invitation au voyage.
+              Chez Wellnessthaii, chaque prestation est une invitation au voyage.
               Nos massages, hérités des techniques ancestrales thaïlandaises, allient
               pressions, étirements et huiles naturelles pour une détente profonde du
               corps et de l&apos;esprit. Dans une ambiance chaleureuse et apaisante,

@@ -41,8 +41,8 @@ const HeroSection = () => {
           className="absolute inset-0"
         >
           <Image
-            src="/images/interieur/interieur-2.jpg"
-            alt="Salle de massage violette au salon Well & Thaï"
+            src="/images/interieur/interieur-2.png"
+            alt="Salle de massage violette au salon Wellnessthaii"
             fill
             className="object-cover"
             priority
@@ -73,7 +73,7 @@ const HeroSection = () => {
               <div className="relative w-[140px] h-[73px] md:w-[210px] md:h-[109px]">
                 <Image
                   src="/images/logo/logo-emblem.png"
-                  alt="Emblème Well & Thaï - Fleur de lotus dorée"
+                  alt="Emblème Wellnessthaii - Cercle zen doré"
                   fill
                   className="object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
                   sizes="(max-width: 768px) 140px, 210px"
@@ -90,7 +90,7 @@ const HeroSection = () => {
             className="space-y-10"
           >
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-normal tracking-wide leading-tight">
-              Well & Thaï
+              Wellnessthaii
             </h1>
             <div className="h-px w-24 mx-auto bg-gold/30"></div>
             <p className="font-serif text-xl md:text-2xl text-cream font-light max-w-2xl mx-auto leading-relaxed tracking-wide">
@@ -132,7 +132,7 @@ const HeroSection = () => {
             </span>
             <div className="w-px h-3 bg-gold/30"></div>
             <span className="text-cream/70 text-sm font-light tracking-wide">
-              <AnimatedCounter value={49} duration={1.8} /> clients satisfaits
+              <AnimatedCounter value={45} duration={1.8} /> clients satisfaits
             </span>
           </motion.div>
 
@@ -144,9 +144,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center pt-12"
           >
             <a
-              href="https://www.planity.com/well-thai-54000-nancy"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:0612345678"
               className="text-base font-light border border-gold text-gold hover:bg-gold/10 px-10 py-3.5 rounded-md transition-all duration-200 tracking-wide hover:-translate-y-1 hover:shadow-lg"
             >
               Réserver maintenant

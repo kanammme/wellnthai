@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Well & Thaï - Massage bien-être thaïlandais à Nancy',
+  title: 'Wellnessthaii - Massage bien-être thaïlandais à Nancy',
   description: 'Salon de massage bien-être thaïlandais à Nancy. Découvrez nos prestations de massage traditionnel thaï, massage bien-être et relaxation.',
 }
 

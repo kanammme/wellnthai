@@ -19,8 +19,8 @@ const AboutPreview = () => {
           >
             <div className="aspect-square relative">
               <Image
-                src="/images/interieur/interieur-1.jpg"
-                alt="Ambiance chaleureuse du salon Well & Thaï avec fleurs décoratives"
+                src="/images/interieur/interieur-1.png"
+                alt="Ambiance chaleureuse du salon Wellnessthaii avec fleurs décoratives"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -44,13 +44,13 @@ const AboutPreview = () => {
             className="space-y-6"
           >
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-cream">
-              Rencontrez Wannapha
+              Rencontrez Aiyara
             </h2>
 
             <div className="space-y-4">
               <p className="text-cream/90 text-lg leading-relaxed">
                 Immergez-vous dans un univers de bien-être et de sérénité avec
-                Wannapha, votre masseuse dévouée à Nancy.
+                Aiyara, votre masseuse dévouée à Nancy.
               </p>
               <p className="text-cream/80 leading-relaxed">
                 Elle consacre ses talents à l&apos;art délicat du massage thaïlandais
@@ -59,7 +59,7 @@ const AboutPreview = () => {
               </p>
               <p className="text-cream/80 leading-relaxed">
                 Passionnée par le bien-être et formée aux méthodes traditionnelles,
-                Wannapha vous accueille dans un cadre chaleureux où chaque soin
+                Aiyara vous accueille dans un cadre chaleureux où chaque soin
                 est personnalisé selon vos besoins spécifiques.
               </p>
             </div>

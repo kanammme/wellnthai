@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'À propos — Well & Thaï Nancy',
-  description: 'Découvrez l\'histoire de Well & Thaï, salon de massage thaïlandais à Nancy, et rencontrez Wannapha, votre masseuse experte en techniques ancestrales thaïlandaises.',
+  title: 'À propos — Wellnessthaii Nancy',
+  description: 'Découvrez l\'histoire de Wellnessthaii, salon de massage thaïlandais à Nancy, et rencontrez Aiyara, votre masseuse experte en techniques ancestrales thaïlandaises.',
 }
 
 export default function AboutLayout({

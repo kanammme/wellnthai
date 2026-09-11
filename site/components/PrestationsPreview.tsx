@@ -14,7 +14,7 @@ const prestations = [
     subtitle: 'Thaï traditionnel 1H',
     duration: '1h',
     price: '80€',
-    image: '/images/prestations/thai.jpg',
+    image: '/images/prestations/thai.png',
     description: 'L\'art d\'harmoniser les énergies. Pressions, étirements et mobilisations pour libérer les tensions et retrouver calme et clarté d\'esprit.',
     colorClass: 'bg-gold-500',
     textColorClass: 'text-gold-600',
@@ -25,7 +25,7 @@ const prestations = [
     subtitle: 'Huiles chaudes 1H',
     duration: '1h',
     price: '90€',
-    image: '/images/prestations/bien-etre.jpg',
+    image: '/images/prestations/bien-etre.png',
     description: 'Une alliance précieuse entre toucher, huiles naturelles et relaxation profonde, pour nourrir la peau et apaiser le mental.',
     colorClass: 'bg-purple-500',
     textColorClass: 'text-purple-600',
@@ -36,7 +36,7 @@ const prestations = [
     subtitle: 'Deep tissus 1H',
     duration: '1h',
     price: '90€',
-    image: '/images/prestations/deep-tissu.jpg',
+    image: '/images/prestations/deep-tissu.png',
     description: 'Le pouvoir du toucher en profondeur. Idéal pour soulager les tensions chroniques et retrouver mobilité et vitalité.',
     colorClass: 'bg-dark-500',
     textColorClass: 'text-dark-600',
@@ -141,9 +141,7 @@ const PrestationsPreview = () => {
 
                   {/* Bouton */}
                   <a
-                    href="https://www.planity.com/well-thai-54000-nancy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="tel:0612345678"
                     className={`w-full ${prestation.colorClass} text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition-all duration-200 block text-center hover:-translate-y-1 hover:shadow-lg`}
                     onClick={(e) => e.stopPropagation()}
                   >
