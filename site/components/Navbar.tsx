@@ -20,7 +20,7 @@ const Navbar = () => {
       const currentScrollY = window.scrollY
       const isMobile = window.innerWidth < 768
 
-      
+
       // Mise à jour de l'opacité pour desktop (transparent → opaque au scroll)
       if (!isMobile) {
         const opacity = Math.min(0.9, Math.max(0.4, 0.4 + (currentScrollY / 100) * 0.5))
@@ -34,7 +34,7 @@ const Navbar = () => {
         const atTop = currentScrollY <= 10
         const scrolledEnough = currentScrollY > scrollThreshold
 
-        
+
         if (scrollingDown && scrolledEnough) {
           // Scrolle vers le bas assez loin → masquer
           setIsNavbarVisible(false)
@@ -100,8 +100,8 @@ const Navbar = () => {
               <Image
                 src="/images/logo/logo-emblem.png"
                 alt="Emblème Wellnessthaii"
-                width={32}
-                height={17}
+                fill
+                sizes="32px"
                 className="object-contain"
               />
             </div>

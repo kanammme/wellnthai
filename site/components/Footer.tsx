@@ -14,8 +14,8 @@ const Footer = () => {
                 <Image
                   src="/images/logo/logo-emblem.png"
                   alt="Emblème Wellnessthaii"
-                  width={40}
-                  height={21}
+                  fill
+                  sizes="40px"
                   className="object-contain"
                 />
               </div>

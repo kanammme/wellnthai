@@ -70,7 +70,7 @@ const HeroSection = () => {
             className="inline-block"
           >
             <div className="mx-auto relative flex items-center justify-center mb-12">
-              <div className="relative w-[140px] h-[73px] md:w-[210px] md:h-[109px]">
+              <div className="relative w-[110px] h-[110px] md:w-[160px] md:h-[160px]">
                 <Image
                   src="/images/logo/logo-emblem.png"
                   alt="Emblème Wellnessthaii - Cercle zen doré"
