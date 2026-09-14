@@ -27,13 +27,13 @@ const prestationsData = {
   ],
   'huiles-parfumees': [
     {
-      name: 'Huile chaude de coco bio parfumée des huiles de "RITUALS"',
+      name: 'Huile chaude de coco bio parfumée aux huiles précieuses',
       duration: '1h',
       price: '95€',
       tags: ['Fleur de cerisier', 'Fleur de lotus', 'Eucalyptus']
     },
     {
-      name: 'Huile chaude de coco bio parfumée des huiles de "RITUALS"',
+      name: 'Huile chaude de coco bio parfumée aux huiles précieuses',
       duration: '1h30',
       price: '125€',
       tags: ['Fleur de cerisier', 'Fleur de lotus', 'Eucalyptus']
@@ -50,19 +50,19 @@ const prestationsData = {
   ],
   'formules': [
     {
-      name: 'Well&Thaï Cocooning',
+      name: 'Wellnessthaii Cocooning',
       duration: '2h',
       price: '150€',
       description: 'massage aux huiles chaudes + pierres chaudes dos + massage visage'
     },
     {
-      name: 'Well&Thaï Évasion',
+      name: 'Wellnessthaii Évasion',
       duration: '2h',
       price: '130€',
       description: 'massage thaï traditionnel ou bien-être + massage plantaire'
     },
     {
-      name: 'Well&Thaï Ressourçant',
+      name: 'Wellnessthaii Ressourçant',
       duration: '1h30',
       price: '130€',
       description: 'massage aux huiles chaudes + massage aux pierres chaudes dos et épaules'
@@ -154,7 +154,7 @@ const PrestationsPage = () => {
             </div>
             <span className="text-dark font-semibold">5,0</span>
             <span className="text-dark/50">—</span>
-            <span className="text-dark/80">49 clients satisfaits</span>
+            <span className="text-dark/80">45 clients satisfaits</span>
           </div>
         </motion.div>
 
@@ -213,9 +213,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -240,7 +238,7 @@ const PrestationsPage = () => {
                 Les huiles parfumées
               </h2>
               <p className="text-dark/60">
-                Une expérience sensorielle unique avec les huiles RITUALS
+                Une expérience sensorielle unique avec des huiles parfumées haut de gamme
               </p>
             </div>
 
@@ -274,9 +272,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -323,9 +319,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -372,9 +366,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -426,9 +418,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -475,9 +465,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -524,9 +512,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -576,9 +562,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -638,9 +622,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <a
-                      href="https://www.planity.com/well-thai-54000-nancy"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="tel:0612345678"
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
@@ -665,7 +647,7 @@ const PrestationsPage = () => {
               <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
                 <div className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-gold" />
-                  <span className="text-dark font-medium">16 Rue du Faubourg des Trois-Maisons, 54000 Nancy</span>
+                  <span className="text-dark font-medium">Centre-ville de Nancy, 54000</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaClock className="text-gold" />
@@ -678,9 +660,7 @@ const PrestationsPage = () => {
               </h3>
 
               <a
-                href="https://www.planity.com/well-thai-54000-nancy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0612345678"
                 className="inline-flex items-center bg-gold text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-4"
               >
                 Réserver en ligne

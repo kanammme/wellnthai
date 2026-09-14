@@ -7,26 +7,26 @@ import Image from 'next/image'
 const galleryItems = [
   {
     id: 1,
-    image: '/images/interieur/interieur-1.jpg',
-    alt: 'Ambiance chaleureuse du salon Well & Thaï avec fleurs décoratives',
+    image: '/images/interieur/interieur-1.png',
+    alt: 'Ambiance chaleureuse du salon Wellnessthaii avec fleurs décoratives',
     title: 'Ambiance du salon',
   },
   {
     id: 2,
-    image: '/images/interieur/interieur-2.jpg',
-    alt: 'Salle de massage violette au salon Well & Thaï',
+    image: '/images/interieur/interieur-2.png',
+    alt: 'Salle de massage violette au salon Wellnessthaii',
     title: 'Cabine de massage',
   },
   {
     id: 3,
-    image: '/images/interieur/interieur-6.jpg',
+    image: '/images/interieur/interieur-6.png',
     alt: 'Fauteuils verts dans l\'espace détente du salon',
     title: 'Espace détente',
   },
   {
     id: 4,
-    image: '/images/interieur/interieur-4.jpg',
-    alt: 'Zone d\'accueil du salon Well & Thaï',
+    image: '/images/interieur/interieur-4.png',
+    alt: 'Zone d\'accueil du salon Wellnessthaii',
     title: 'Accueil & réception',
   },
 ]

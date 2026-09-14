@@ -20,7 +20,7 @@ const Navbar = () => {
       const currentScrollY = window.scrollY
       const isMobile = window.innerWidth < 768
 
-      
+
       // Mise à jour de l'opacité pour desktop (transparent → opaque au scroll)
       if (!isMobile) {
         const opacity = Math.min(0.9, Math.max(0.4, 0.4 + (currentScrollY / 100) * 0.5))
@@ -34,7 +34,7 @@ const Navbar = () => {
         const atTop = currentScrollY <= 10
         const scrolledEnough = currentScrollY > scrollThreshold
 
-        
+
         if (scrollingDown && scrolledEnough) {
           // Scrolle vers le bas assez loin → masquer
           setIsNavbarVisible(false)
@@ -99,14 +99,14 @@ const Navbar = () => {
             <div className="w-7 h-7 md:w-8 md:h-8 relative flex items-center justify-center mb-0.5">
               <Image
                 src="/images/logo/logo-emblem.png"
-                alt="Emblème Well & Thaï"
-                width={32}
-                height={17}
+                alt="Emblème Wellnessthaii"
+                fill
+                sizes="32px"
                 className="object-contain"
               />
             </div>
             <h1 className="font-serif text-sm md:text-base font-normal text-cream tracking-wider group-hover:text-gold/90 transition-colors duration-300 leading-tight">
-              Well & Thaï
+              Wellnessthaii
             </h1>
           </Link>
 
@@ -123,9 +123,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="https://www.planity.com/well-thai-54000-nancy"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:0612345678"
               className="text-sm font-light border border-gold/50 text-gold hover:bg-gold/5 hover:border-gold px-5 py-2 rounded-md transition-all duration-300 tracking-wide ml-6"
             >
               Réserver
@@ -178,9 +176,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href="https://www.planity.com/well-thai-54000-nancy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0612345678"
                 className="text-center font-light border border-gold/50 text-gold hover:bg-gold/5 hover:border-gold py-3 px-6 rounded-md transition-all duration-300 tracking-wide mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >

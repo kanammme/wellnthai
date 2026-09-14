@@ -20,7 +20,7 @@ export default function AboutPage() {
             L&apos;art du bien-être, une histoire de passion
           </h1>
           <p className="text-dark/80 text-lg md:text-xl max-w-3xl mx-auto">
-            Découvrez l&apos;univers unique de Well & Thaï, où tradition thaïlandaise
+            Découvrez l&apos;univers unique de Wellnessthaii, où tradition thaïlandaise
             et bien-être contemporain se rencontrent pour votre épanouissement.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
                 Notre philosophie
               </h2>
               <p className="text-cream/90 text-lg leading-relaxed">
-                Chez Well & Thaï, chaque massage est bien plus qu&apos;un soin : c&apos;est
+                Chez Wellnessthaii, chaque massage est bien plus qu&apos;un soin : c&apos;est
                 une invitation au voyage. Nous puisons dans les techniques ancestrales
                 thaïlandaises — pressions, étirements, mobilisations le long des
                 lignes d&apos;énergie (sen) — pour rétablir l&apos;équilibre du corps et de
@@ -98,7 +98,7 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* 3. Section Rencontrez Wannapha */}
+      {/* 3. Section Rencontrez Aiyara */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -117,32 +117,32 @@ export default function AboutPage() {
               className="space-y-6"
             >
               <h2 className="font-serif text-3xl md:text-4xl text-dark">
-                Rencontrez Wannapha
+                Rencontrez Aiyara
               </h2>
 
               <div className="space-y-4">
                 <p className="text-dark/80 leading-relaxed">
                   Immergez-vous dans un univers de bien-être et de sérénité avec
-                  Wannapha, votre masseuse dévouée à Nancy. Travaillant chez Well & Thaï,
-                  Wannapha consacre ses talents à l&apos;art délicat du massage thaïlandais
+                  Aiyara, votre masseuse dévouée à Nancy. Travaillant chez Wellnessthaii,
+                  Aiyara consacre ses talents à l&apos;art délicat du massage thaïlandais
                   et du massage des pieds, mettant au service de votre relaxation ses
                   techniques millénaires héritées de la tradition thaï.
                 </p>
                 <p className="text-dark/80 leading-relaxed">
                   Son savoir-faire singulier fait d&apos;elle une praticienne recherchée,
                   appréciée pour son professionnalisme et son attention particulière
-                  aux besoins de chacun. Chez Well & Thaï, Wannapha crée une atmosphère
+                  aux besoins de chacun. Chez Wellnessthaii, Aiyara crée une atmosphère
                   relaxante et apaisante, veillant à votre confort et à vos attentes
                   pour une expérience inoubliable.
                 </p>
                 <p className="text-dark/80 leading-relaxed">
                   Chaque prestation est une invitation au voyage, offrant une évasion
-                  sensorielle. Passionnée, Wannapha vous accueillera avec le sourire
+                  sensorielle. Passionnée, Aiyara vous accueillera avec le sourire
                   et saura vous orienter vers le traitement adéquat.
                 </p>
                 <p className="text-dark/80 leading-relaxed">
-                  À Well & Thaï à Nancy, laissez-vous transporter par la douceur et
-                  l&apos;expertise de Wannapha. Vous apprécierez ce moment privilégié de
+                  À Wellnessthaii à Nancy, laissez-vous transporter par la douceur et
+                  l&apos;expertise d&apos;Aiyara. Vous apprécierez ce moment privilégié de
                   bien-être et de détente.
                 </p>
               </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
                 </div>
                 <span className="text-dark font-semibold">5,0</span>
                 <span className="text-dark/50">—</span>
-                <span className="text-dark/80">49 avis clients</span>
+                <span className="text-dark/80">45 avis clients</span>
               </div>
             </motion.div>
 
@@ -172,8 +172,8 @@ export default function AboutPage() {
             >
               <div className="aspect-square relative">
                 <Image
-                  src="/images/interieur/interieur-4.jpg"
-                  alt="Bureau d'accueil du salon Well & Thaï avec cygnes artistiques en serviettes"
+                  src="/images/interieur/interieur-4.png"
+                  alt="Bureau d'accueil du salon Wellnessthaii avec cygnes artistiques en serviettes"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -185,7 +185,7 @@ export default function AboutPage() {
               {/* Légende décorative */}
               <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm p-4 text-center">
                 <p className="text-cream text-sm font-medium">
-                  L&apos;accueil chaleureux de votre praticienne Wannapha
+                  L&apos;accueil chaleureux de votre praticienne Aiyara
                 </p>
               </div>
             </motion.div>
@@ -296,7 +296,7 @@ export default function AboutPage() {
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-dark mb-8">
-              Prêt à vivre l&apos;expérience Well & Thaï ?
+              Prêt à vivre l&apos;expérience Wellnessthaii ?
             </h2>
             <p className="text-dark/70 text-lg mb-10 max-w-2xl mx-auto">
               Rejoignez nos nombreux clients satisfaits et offrez-vous un moment
@@ -305,9 +305,7 @@ export default function AboutPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.planity.com/well-thai-54000-nancy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0612345678"
                 className="btn-primary px-8 py-4 text-lg font-semibold hover:scale-105 transition-transform inline-flex items-center justify-center"
               >
                 Réserver maintenant
@@ -326,7 +324,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-dark/80">
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
                 <h4 className="font-semibold text-dark mb-2">📍 Nancy Centre</h4>
-                <p className="text-sm">16 Rue du Faubourg des Trois-Maisons</p>
+                <p className="text-sm">Centre-ville de Nancy</p>
               </div>
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
                 <h4 className="font-semibold text-dark mb-2">⏰ Horaires</h4>
@@ -334,7 +332,7 @@ export default function AboutPage() {
               </div>
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
                 <h4 className="font-semibold text-dark mb-2">⭐ Réputation</h4>
-                <p className="text-sm">5,0/5 sur 49 avis vérifiés</p>
+                <p className="text-sm">5,0/5 sur 45 avis vérifiés</p>
               </div>
             </div>
           </div>

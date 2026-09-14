@@ -9,32 +9,32 @@ import Link from 'next/link'
 
 const galleryImages = [
   {
-    src: '/images/interieur/interieur-1.jpg',
+    src: '/images/interieur/interieur-1.png',
     alt: 'Coin salon avec fleurs, ambiance violette et apaisante',
     description: 'Un espace de détente chaleureux avec des fleurs décoratives',
   },
   {
-    src: '/images/interieur/interieur-2.jpg',
+    src: '/images/interieur/interieur-2.png',
     alt: 'Salle de massage avec lit de massage et miroir lumineux violet',
     description: 'Notre cabine principale avec éclairage violet relaxant',
   },
   {
-    src: '/images/interieur/interieur-3.jpg',
+    src: '/images/interieur/interieur-3.png',
     alt: 'Salle double massage, ambiance violette pour une expérience à deux',
     description: 'Cabine double idéale pour les séances en couple',
   },
   {
-    src: '/images/interieur/interieur-4.jpg',
+    src: '/images/interieur/interieur-4.png',
     alt: 'Bureau d\'accueil avec cygnes artistiques en serviettes',
     description: 'Notre réception avec une touche artistique thaïlandaise',
   },
   {
-    src: '/images/interieur/interieur-5.jpg',
+    src: '/images/interieur/interieur-5.png',
     alt: 'Entrée du salon avec portemanteaux et lanterne décorative',
     description: 'L\'entrée chaleureuse de notre salon',
   },
   {
-    src: '/images/interieur/interieur-6.jpg',
+    src: '/images/interieur/interieur-6.png',
     alt: 'Fauteuils verts dans le coin salon pour la détente avant et après le massage',
     description: 'Espace détente avec fauteuils confortables',
   },
@@ -167,9 +167,7 @@ export default function GaleriePage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.planity.com/well-thai-54000-nancy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0612345678"
                 className="btn-primary px-8 py-4 text-lg font-semibold hover:scale-105 transition-transform"
               >
                 Réserver votre moment bien-être

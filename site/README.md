@@ -1,4 +1,4 @@
-# Well & Thaï - Site vitrine
+# Wellnessthaii - Site vitrine
 
 Site vitrine pour un salon de massage bien-être thaïlandais situé à Nancy.
 
@@ -49,7 +49,7 @@ wellnthai-site/
 ├── public/
 │   └── images/
 │       ├── interieur/           # Photos d'ambiance (1-6)
-│       ├── logo/               # Logo Well & Thaï
+│       ├── logo/               # Logo Wellnessthaii
 │       └── prestations/        # Visuels des prestations
 └── ... fichiers de configuration
 ```
@@ -127,4 +127,4 @@ npm start
 
 ## 📄 Licence
 
-Propriété de Well & Thaï - Salon de massage bien-être thaïlandais, Nancy.
+Pièce de portfolio (démonstration) — Wellnessthaii, salon de massage bien-être thaïlandais fictif, Nancy.

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact & Horaires — Well & Thaï Nancy',
-  description: 'Adresse, horaires d\'ouverture et accès au salon Well & Thaï à Nancy. Réservez votre massage bien-être en ligne.',
+  title: 'Contact & Horaires — Wellnessthaii Nancy',
+  description: 'Adresse, horaires d\'ouverture et accès au salon Wellnessthaii à Nancy. Réservez votre massage bien-être en ligne.',
 }
 
 export default function ContactLayout({

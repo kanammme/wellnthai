@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { FaMapMarkerAlt, FaClock, FaCalendarAlt, FaParking, FaBus, FaWheelchair, FaInstagram, FaFacebook, FaChevronDown, FaChevronUp, FaStar, FaGoogle } from 'react-icons/fa'
 
 const ContactClient = () => {
@@ -29,11 +30,11 @@ const ContactClient = () => {
   const faqItems = [
     {
       question: 'Comment réserver un rendez-vous ?',
-      answer: 'La réservation se fait en ligne via notre plateforme partenaire Planity, disponible 24h/24, avec confirmation immédiate. Cliquez sur le bouton "Réserver en ligne" ci-dessus pour accéder directement à notre agenda.'
+      answer: 'La réservation se fait en ligne via notre plateforme de réservation, disponible 24h/24, avec confirmation immédiate. Cliquez sur le bouton "Réserver en ligne" ci-dessus pour accéder directement à notre agenda, ou appelez-nous directement.'
     },
     {
       question: 'Puis-je annuler ou modifier mon rendez-vous ?',
-      answer: 'Oui, vous pouvez annuler ou modifier votre rendez-vous directement depuis votre confirmation de réservation Planity. Les modifications sont gratuites jusqu\'à 24h avant le rendez-vous.'
+      answer: 'Oui, vous pouvez annuler ou modifier votre rendez-vous directement depuis votre confirmation de réservation. Les modifications sont gratuites jusqu\'à 24h avant le rendez-vous.'
     },
     {
       question: 'Le salon propose-t-il des cartes cadeaux ?',
@@ -63,7 +64,7 @@ const ContactClient = () => {
             Nous trouver & nous contacter
           </h1>
           <p className="text-dark/80 text-lg md:text-xl">
-            Toutes les informations pratiques pour venir vous détendre chez Well & Thaï.
+            Toutes les informations pratiques pour venir vous détendre chez Wellnessthaii.
           </p>
         </motion.div>
 
@@ -86,7 +87,7 @@ const ContactClient = () => {
                 <div>
                   <h2 className="font-serif text-2xl text-dark mb-2">Adresse</h2>
                   <p className="text-dark/80 text-lg">
-                    16 Rue du Faubourg des Trois-Maisons<br />
+                    Centre-ville<br />
                     54000 Nancy
                   </p>
                 </div>
@@ -145,9 +146,7 @@ const ContactClient = () => {
                     Réservez votre moment de bien-être en quelques clics
                   </p>
                   <a
-                    href="https://www.planity.com/well-thai-54000-nancy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="tel:0612345678"
                     className="btn-primary w-full text-center text-lg py-4 mb-4 hover:scale-105 transition-transform"
                   >
                     Réserver en ligne
@@ -200,21 +199,21 @@ const ContactClient = () => {
 
               <div className="relative h-96 w-full">
                 <iframe
-                  src="https://www.google.com/maps?q=16+Rue+du+Faubourg+des+Trois-Maisons,+54000+Nancy&output=embed"
+                  src="https://www.google.com/maps?q=Nancy,+France&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation du salon Well & Thaï à Nancy"
+                  title="Localisation du salon Wellnessthaii à Nancy"
                   className="absolute inset-0"
                 />
               </div>
 
               <div className="p-6">
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=16+Rue+du+Faubourg+des+Trois-Maisons+54000+Nancy"
+                  href="https://maps.google.com/?q=Nancy,+France"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary w-full text-center inline-flex items-center justify-center"
@@ -231,8 +230,8 @@ const ContactClient = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-dark mb-1">Téléphone</h4>
-                  <a href="tel:0766975971" className="text-dark/70 hover:text-gold transition-colors">
-                    07 66 97 59 71
+                  <a href="tel:0612345678" className="text-dark/70 hover:text-gold transition-colors">
+                    06 12 34 56 78
                   </a>
                 </div>
                 <div>
@@ -375,7 +374,7 @@ const ContactClient = () => {
               </div>
               <span className="text-dark font-bold text-lg">5,0 ★</span>
               <span className="text-dark/50">—</span>
-              <span className="text-dark/80 font-medium">33 avis Google</span>
+              <span className="text-dark/80 font-medium">45 avis clients</span>
               <FaGoogle className="text-gray-500" />
             </div>
 
@@ -383,15 +382,13 @@ const ContactClient = () => {
               Découvrez les témoignages de nos clients satisfaits
             </p>
 
-            <a
-              href="https://www.google.com/maps/place/Well%26Tha%C3%AF,+Rue+du+Faubourg+des+Trois+-+Maisons,+Nancy/data=!4m2!3m1!1s0x479499e839acd031:0x149be350e7cae181!18m1!1e1"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/a-propos"
               className="btn-secondary px-6 py-3 text-base font-semibold hover:bg-gold/5 transition-colors inline-flex items-center justify-center"
             >
               <FaGoogle className="mr-2" />
               Voir tous nos avis
-            </a>
+            </Link>
           </div>
         </motion.section>
 
@@ -412,15 +409,13 @@ const ContactClient = () => {
               la plus adaptée à vos besoins.
             </p>
             <a
-              href="https://www.planity.com/well-thai-54000-nancy"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:0612345678"
               className="btn-primary px-10 py-5 text-xl font-semibold hover:scale-105 transition-transform inline-flex items-center"
             >
               Réserver maintenant
             </a>
             <p className="text-dark/60 text-sm mt-6">
-              Ou contactez-nous au <a href="tel:0766975971" className="text-gold hover:text-gold-600 transition-colors font-medium">07 66 97 59 71</a> pour toute question
+              Ou contactez-nous au <a href="tel:0612345678" className="text-gold hover:text-gold-600 transition-colors font-medium">06 12 34 56 78</a> pour toute question
             </p>
           </div>
         </motion.section>

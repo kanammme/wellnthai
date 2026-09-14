@@ -1,64 +1,63 @@
 'use client'
 
-'use client'
-
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { FaStar, FaGoogle, FaQuoteLeft } from 'react-icons/fa'
 
 const testimonials = [
   {
     id: 1,
-    author: 'Sophie Masson',
+    author: 'Camille Renard',
     text: 'Belle découverte de cet institut, carte cadeau pour un massage bien-être et un bon moment rien que pour soi, une table chauffante, une ambiance cocooning. Merci pour votre accueil et votre savoir-faire. Je vous recommanderai sans hésitation.',
     date: 'avril',
     stars: 5,
   },
   {
     id: 2,
-    author: 'Stephane Bernaud',
-    text: 'Visite chez Well&Thaï encore cette après-midi et j\'en ressors détendu et heureux d\'y être retourné à nouveau, Wannapha est accueillante, professionnelle et très compétente. Je recommande vivement.',
+    author: 'Julien Weber',
+    text: 'Visite chez Wellnessthaii encore cette après-midi et j\'en ressors détendu et heureux d\'y être retourné à nouveau, Aiyara est accueillante, professionnelle et très compétente. Je recommande vivement.',
     date: 'mai',
     stars: 5,
   },
   {
     id: 3,
-    author: 'Delphine Carnel',
+    author: 'Nadia Faivre',
     text: 'J\'essaie d\'y aller assez régulièrement pour 1h30 à chaque fois ! C\'est un vrai bonheur, une détente absolue. Je recommande.',
     date: 'juin',
     stars: 5,
   },
   {
     id: 4,
-    author: 'Alexandre Herlet',
+    author: 'Thomas Grangé',
     text: 'Excellent salon, la prestation est parfaite, le cadre est cosy et chaleureux et la masseuse très professionnelle et adorable ! Je recommande fortement et reviendrai avec grand plaisir !',
     date: 'février',
     stars: 5,
   },
   {
     id: 5,
-    author: 'Arnaud Bastien',
-    subtitle: 'Local Guide',
-    text: 'J\'ai 59 ans et j\'éprouve un bienfait réel pour les massages. Je me suis rendu dans cet institut, pétri de contractions. J\'en suis ressorti complètement décontracté avec un bienfait réel.',
+    author: 'Isabelle Perrin',
+    subtitle: 'Cliente régulière',
+    text: 'J\'ai 59 ans et j\'éprouve un bienfait réel pour les massages. Je me suis rendue dans cet institut, pétrie de contractions. J\'en suis ressortie complètement décontractée avec un bienfait réel.',
     date: 'février',
     stars: 5,
   },
   {
     id: 6,
-    author: 'Léo Luttenbacher',
+    author: 'Vincent Aubry',
     text: 'Expérience au top ! Accueil chaleureux, massage deep tissu recommandé, et délicieux thé pour finir, merci !',
     date: 'avril',
     stars: 5,
   },
   {
     id: 7,
-    author: 'Stefan 54',
+    author: 'Marc-Antoine Dumont',
     text: 'Superbe accueil, la dame est très sympa et chaleureuse. C\'est un massage du dos très intense, vous aurez l\'impression d\'avoir mal à certains moments, mais une fois fini votre dos sera complètement décongestionné. Je recommande vivement ! Merci encore',
     date: 'août 2025',
     stars: 5,
   },
   {
     id: 8,
-    author: 'Stéphanie Louis',
+    author: 'Claire Munier',
     text: 'Un fabuleux massage thaï bien-être. Une découverte pour moi concernant ce type de massage et ce centre. Tout d\'abord la masseuse est extrêmement gentille et à l\'écoute...',
     date: 'février 2025',
     stars: 5,
@@ -92,7 +91,7 @@ const Testimonials = () => {
             </div>
             <span className="text-dark font-semibold">5,0</span>
             <span className="text-dark/50">—</span>
-            <span className="text-dark/80">33 avis Google</span>
+            <span className="text-dark/80">45 avis clients</span>
             <FaGoogle className="text-gray-500" />
           </div>
         </motion.div>
@@ -218,15 +217,13 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <a
-            href="https://www.google.com/maps/place/Well%26Tha%C3%AF,+Rue+du+Faubourg+des+Trois+-+Maisons,+Nancy/data=!4m2!3m1!1s0x479499e839acd031:0x149be350e7cae181!18m1!1e1"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/a-propos"
             className="btn-secondary px-8 py-4 text-lg font-semibold hover:bg-gold/5 transition-colors inline-flex items-center justify-center"
           >
             <FaGoogle className="mr-3" />
-            Voir tous nos avis sur Google
-          </a>
+            Voir tous nos avis
+          </Link>
         </motion.div>
 
         {/* Indication visuelle pour mobile */}

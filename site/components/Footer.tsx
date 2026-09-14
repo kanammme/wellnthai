@@ -13,14 +13,14 @@ const Footer = () => {
               <div className="w-10 h-10 relative flex items-center justify-center">
                 <Image
                   src="/images/logo/logo-emblem.png"
-                  alt="Emblème Well & Thaï"
-                  width={40}
-                  height={21}
+                  alt="Emblème Wellnessthaii"
+                  fill
+                  sizes="40px"
                   className="object-contain"
                 />
               </div>
               <div>
-                <h2 className="font-serif text-2xl font-bold text-cream mb-0.5">Well & Thaï</h2>
+                <h2 className="font-serif text-2xl font-bold text-cream mb-0.5">Wellnessthaii</h2>
                 <p className="text-gold/70 text-sm">Massage bien-être thaïlandais</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <div>
                   <p className="font-medium text-cream">Adresse</p>
                   <p className="text-cream/80">
-                    16 Rue du Faubourg des Trois-Maisons<br />
+                    Centre-ville<br />
                     54000 Nancy
                   </p>
                 </div>
@@ -66,8 +66,8 @@ const Footer = () => {
                 <FaPhone className="text-gold" />
                 <div>
                   <p className="font-medium text-cream">Téléphone</p>
-                  <a href="tel:0766975971" className="text-cream/80 hover:text-gold transition-colors">
-                    07 66 97 59 71
+                  <a href="tel:0612345678" className="text-cream/80 hover:text-gold transition-colors">
+                    06 12 34 56 78
                   </a>
                 </div>
               </div>
@@ -127,9 +127,7 @@ const Footer = () => {
             </div>
             <div className="pt-4">
               <Link
-                href="https://www.planity.com/well-thai-54000-nancy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0612345678"
                 className="btn-primary w-full text-center block"
               >
                 Réserver en ligne
@@ -142,7 +140,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gold/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-cream/60 text-sm">
-              © {new Date().getFullYear()} Well & Thaï. Tous droits réservés.
+              © {new Date().getFullYear()} Wellnessthaii. Tous droits réservés.
             </p>
             <div className="flex space-x-6">
               <Link
