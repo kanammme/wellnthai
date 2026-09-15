@@ -28,7 +28,7 @@ const AnimatedCounter = ({ value, duration = 2 }: { value: number, duration?: nu
 // du Hero, donc ces valeurs sont un compromis entre 1920x1080 et 1440x900,
 // calibré visuellement — à réajuster si la photo de fond change.
 const MIRROR_LOGO_TOP = '11%'
-const MIRROR_LOGO_LEFT = '47%'
+const MIRROR_LOGO_LEFT = '50%'
 
 const HeroSection = () => {
   return (
