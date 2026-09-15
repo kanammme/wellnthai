@@ -23,6 +23,13 @@ const AnimatedCounter = ({ value, duration = 2 }: { value: number, duration?: nu
   return <motion.span>{rounded}</motion.span>
 }
 
+// Position du logo callée sur le miroir de interieur-2.png (photo carrée
+// 1024x1024 en object-cover : le point de rognage se déplace selon le ratio
+// du Hero, donc ces valeurs sont un compromis entre 1920x1080 et 1440x900,
+// calibré visuellement — à réajuster si la photo de fond change.
+const MIRROR_LOGO_TOP = '11%'
+const MIRROR_LOGO_LEFT = '47%'
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
@@ -55,28 +62,53 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-gold/5 via-transparent to-purple-accent/3" />
       </div>
 
+      {/* Logo callé sur le miroir de la photo de fond - desktop/tablette uniquement.
+          Le centrage (translate -50/-50) doit rester sur ce wrapper simple : un
+          motion.div avec sa propre animation de scale gère "transform" lui-même
+          et écraserait un transform de centrage posé au même endroit. */}
+      <div
+        className="hidden md:block absolute z-10 pointer-events-none"
+        style={{ top: MIRROR_LOGO_TOP, left: MIRROR_LOGO_LEFT, transform: 'translate(-50%, -50%)' }}
+      >
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+        >
+          <div className="relative w-[150px] h-[150px]">
+            <Image
+              src="/images/logo/logo-emblem.png"
+              alt="Emblème Wellnessthaii - Cercle zen doré"
+              fill
+              className="object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
+              sizes="150px"
+            />
+          </div>
+        </motion.div>
+      </div>
+
       <div className="container-wide text-center z-10 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-16 max-w-5xl mx-auto"
+          className="space-y-10 md:space-y-16 max-w-5xl mx-auto"
         >
-          {/* Logo - version épurée */}
+          {/* Logo - version mobile uniquement, simple et centrée dans le flux */}
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="inline-block"
+            className="md:hidden inline-block"
           >
-            <div className="mx-auto relative flex items-center justify-center mb-12">
-              <div className="relative w-[110px] h-[110px] md:w-[160px] md:h-[160px]">
+            <div className="mx-auto relative flex items-center justify-center mb-4">
+              <div className="relative w-[110px] h-[110px]">
                 <Image
                   src="/images/logo/logo-emblem.png"
                   alt="Emblème Wellnessthaii - Cercle zen doré"
                   fill
                   className="object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
-                  sizes="(max-width: 768px) 140px, 210px"
+                  sizes="140px"
                 />
               </div>
             </div>
@@ -87,7 +119,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="space-y-10"
+            className="space-y-10 md:pt-20"
           >
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-normal tracking-wide leading-tight">
               Wellnessthaii
