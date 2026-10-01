@@ -184,15 +184,15 @@ export default function GaleriePage() {
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-cream/80">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                <h3 className="font-semibold text-cream mb-2">Ambiance apaisante</h3>
+                <h3 className="text-lg md:text-xl font-semibold text-cream mb-2">Ambiance apaisante</h3>
                 <p className="text-sm">Lumières tamisées, musique douce et parfums relaxants</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                <h3 className="font-semibold text-cream mb-2">Équipement professionnel</h3>
+                <h3 className="text-lg md:text-xl font-semibold text-cream mb-2">Équipement professionnel</h3>
                 <p className="text-sm">Tables de massage ergonomiques et produits de qualité</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                <h3 className="font-semibold text-cream mb-2">Hygiène irréprochable</h3>
+                <h3 className="text-lg md:text-xl font-semibold text-cream mb-2">Hygiène irréprochable</h3>
                 <p className="text-sm">Nettoyage approfondi après chaque client</p>
               </div>
             </div>

@@ -67,7 +67,7 @@ const GalleryPreview = () => {
 
                 {/* Titre visible au hover */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-cream font-semibold text-center">
+                  <h3 className="text-base md:text-lg text-cream font-semibold text-center">
                     {item.title}
                   </h3>
                 </div>
