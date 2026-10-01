@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa'
+import DemoAction from '@/components/DemoAction'
 
 const Footer = () => {
   return (
@@ -28,24 +29,6 @@ const Footer = () => {
               Un espace de détente et de bien-être au cœur de Nancy,
               où tradition thaïlandaise et relaxation se rencontrent.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                className="text-cream/70 hover:text-gold transition-colors"
-                aria-label="Instagram"
-              >
-                <FaInstagram size={24} />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                className="text-cream/70 hover:text-gold transition-colors"
-                aria-label="Facebook"
-              >
-                <FaFacebook size={24} />
-              </a>
-            </div>
           </div>
 
           {/* Contact & Hours */}
@@ -66,9 +49,9 @@ const Footer = () => {
                 <FaPhone className="text-gold" />
                 <div>
                   <p className="font-medium text-cream">Téléphone</p>
-                  <a href="tel:0612345678" className="text-cream/80 hover:text-gold transition-colors">
-                    06 12 34 56 78
-                  </a>
+                  <DemoAction kind="appeler" className="text-cream/80 hover:text-gold transition-colors">
+                    Appeler le salon
+                  </DemoAction>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -113,7 +96,7 @@ const Footer = () => {
                 Contact
               </Link>
               <Link
-                href="/faq"
+                href="/contact#faq"
                 className="text-cream/80 hover:text-gold transition-colors"
               >
                 FAQ
@@ -126,12 +109,11 @@ const Footer = () => {
               </Link>
             </div>
             <div className="pt-4">
-              <Link
-                href="tel:0612345678"
+              <DemoAction
                 className="btn-primary w-full text-center block"
               >
                 Réserver en ligne
-              </Link>
+              </DemoAction>
             </div>
           </div>
         </div>
@@ -139,23 +121,13 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gold/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-cream/60 text-sm">
-              © {new Date().getFullYear()} Wellnessthaii. Tous droits réservés.
+            <p className="text-cream/60 text-sm text-center md:text-left">
+              Wellnessthaii est un établissement fictif : site de démonstration conçu par{' '}
+              <a href="https://al-h.fr" className="text-gold/80 hover:text-gold transition-colors">
+                AL H · Digital Studio
+              </a>
+              .
             </p>
-            <div className="flex space-x-6">
-              <Link
-                href="/politique-confidentialite"
-                className="text-cream/60 hover:text-gold text-sm transition-colors"
-              >
-                Politique de confidentialité
-              </Link>
-              <Link
-                href="/cgv"
-                className="text-cream/60 hover:text-gold text-sm transition-colors"
-              >
-                CGV
-              </Link>
-            </div>
           </div>
         </div>
       </div>

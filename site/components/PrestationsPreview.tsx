@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Lightbox from './Lightbox'
 import { FaSearchPlus } from 'react-icons/fa'
+import DemoAction from '@/components/DemoAction'
 
 const prestations = [
   {
@@ -140,13 +141,11 @@ const PrestationsPreview = () => {
                   </p>
 
                   {/* Bouton */}
-                  <a
-                    href="tel:0612345678"
+                  <DemoAction
                     className={`w-full ${prestation.colorClass} text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition-all duration-200 block text-center hover:-translate-y-1 hover:shadow-lg`}
-                    onClick={(e) => e.stopPropagation()}
                   >
                     Choisir
-                  </a>
+                  </DemoAction>
                 </div>
               </motion.div>
             ))}

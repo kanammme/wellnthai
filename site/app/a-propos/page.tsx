@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaLeaf, FaBalanceScale, FaHeart, FaStar, FaHands, FaHeartbeat, FaBrain, FaArrowRight } from 'react-icons/fa'
+import { FaLeaf, FaBalanceScale, FaHeart, FaHands, FaHeartbeat, FaBrain, FaArrowRight } from 'react-icons/fa'
+import DemoAction from '@/components/DemoAction'
 
 export default function AboutPage() {
   return (
@@ -147,19 +148,6 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Badge note */}
-              <div className="inline-flex items-center bg-gold/10 border border-gold/30 rounded-full px-6 py-3 space-x-3 mt-4">
-                <div className="flex items-center space-x-1">
-                  <FaStar className="text-gold" />
-                  <FaStar className="text-gold" />
-                  <FaStar className="text-gold" />
-                  <FaStar className="text-gold" />
-                  <FaStar className="text-gold" />
-                </div>
-                <span className="text-dark font-semibold">5,0</span>
-                <span className="text-dark/50">—</span>
-                <span className="text-dark/80">45 avis clients</span>
-              </div>
             </motion.div>
 
             {/* Image à droite */}
@@ -299,18 +287,17 @@ export default function AboutPage() {
               Prêt à vivre l&apos;expérience Wellnessthaii ?
             </h2>
             <p className="text-dark/70 text-lg mb-10 max-w-2xl mx-auto">
-              Rejoignez nos nombreux clients satisfaits et offrez-vous un moment
+              Offrez-vous un moment
               de détente absolue dans notre cocon de bien-être au cœur de Nancy.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:0612345678"
+              <DemoAction
                 className="btn-primary px-8 py-4 text-lg font-semibold hover:scale-105 transition-transform inline-flex items-center justify-center"
               >
                 Réserver maintenant
                 <FaArrowRight className="ml-3" />
-              </a>
+              </DemoAction>
 
               <Link
                 href="/prestations"
@@ -331,8 +318,8 @@ export default function AboutPage() {
                 <p className="text-sm">Du mardi au samedi • 10h-19h</p>
               </div>
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
-                <h4 className="font-semibold text-dark mb-2">⭐ Réputation</h4>
-                <p className="text-sm">5,0/5 sur 45 avis vérifiés</p>
+                <h4 className="font-semibold text-dark mb-2">🌿 Sur rendez-vous</h4>
+                <p className="text-sm">Massages de 30 min à 2h</p>
               </div>
             </div>
           </div>

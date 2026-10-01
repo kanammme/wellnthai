@@ -1,27 +1,9 @@
 'use client'
 
-import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaStar } from 'react-icons/fa'
-
-// Composant de compteur animé
-const AnimatedCounter = ({ value, duration = 2 }: { value: number, duration?: number }) => {
-  const count = useMotionValue(0)
-  const rounded = useTransform(count, (latest) => Math.round(latest))
-
-  useEffect(() => {
-    const animation = animate(count, value, {
-      duration,
-      ease: "easeOut"
-    })
-
-    return () => animation.stop()
-  }, [value, count, duration])
-
-  return <motion.span>{rounded}</motion.span>
-}
+import DemoAction from '@/components/DemoAction'
 
 // Position du logo callée sur le miroir de interieur-2.png (photo carrée
 // 1024x1024 en object-cover : le point de rognage se déplace selon le ratio
@@ -143,28 +125,19 @@ const HeroSection = () => {
             </p>
           </motion.div>
 
-          {/* Badge note clientèle - version discrète avec compteurs animés */}
+          {/* Badge (site de démonstration : aucune note ni compteur d'avis) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
             className="inline-flex items-center bg-dark/40 backdrop-blur-sm border border-gold/20 rounded-full px-5 py-2.5 space-x-3"
           >
-            <div className="flex items-center space-x-0.5">
-              <FaStar className="text-gold/80 text-sm" />
-              <FaStar className="text-gold/80 text-sm" />
-              <FaStar className="text-gold/80 text-sm" />
-              <FaStar className="text-gold/80 text-sm" />
-              <FaStar className="text-gold/80 text-sm" />
-            </div>
-            <span className="text-cream/90 font-light text-sm">
-              5,0
+            <span className="text-cream/80 text-sm font-light tracking-wide">
+              Massage thaï traditionnel
             </span>
             <div className="w-px h-3 bg-gold/30"></div>
             <span className="text-cream/70 text-sm font-light tracking-wide">
-              <AnimatedCounter value={45} duration={1.8} /> clients satisfaits
+              Nancy centre
             </span>
           </motion.div>
 
@@ -175,12 +148,11 @@ const HeroSection = () => {
             transition={{ delay: 0.6, duration: 0.7 }}
             className="flex flex-col sm:flex-row gap-6 justify-center pt-12"
           >
-            <a
-              href="tel:0612345678"
+            <DemoAction
               className="text-base font-light border border-gold text-gold hover:bg-gold/10 px-10 py-3.5 rounded-md transition-all duration-200 tracking-wide hover:-translate-y-1 hover:shadow-lg"
             >
               Réserver maintenant
-            </a>
+            </DemoAction>
             <Link
               href="/prestations"
               className="text-base font-light text-cream/90 hover:text-gold border-b border-transparent hover:border-gold/50 pb-1 px-10 py-3.5 transition-all duration-200 tracking-wide hover:-translate-y-1"

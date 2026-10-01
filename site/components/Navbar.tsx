@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import DemoAction from '@/components/DemoAction'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -122,12 +123,11 @@ const Navbar = () => {
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold/60 group-hover:w-full transition-all duration-500" />
               </Link>
             ))}
-            <Link
-              href="tel:0612345678"
+            <DemoAction
               className="text-sm font-light border border-gold/50 text-gold hover:bg-gold/5 hover:border-gold px-5 py-2 rounded-md transition-all duration-300 tracking-wide ml-6"
             >
               Réserver
-            </Link>
+            </DemoAction>
           </div>
 
           {/* Mobile menu button - version fine */}
@@ -175,13 +175,11 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="tel:0612345678"
+              <DemoAction
                 className="text-center font-light border border-gold/50 text-gold hover:bg-gold/5 hover:border-gold py-3 px-6 rounded-md transition-all duration-300 tracking-wide mt-4"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Réserver
-              </Link>
+              </DemoAction>
             </div>
           </motion.div>
         )}

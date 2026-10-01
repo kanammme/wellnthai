@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { FaMapMarkerAlt, FaClock, FaCalendarAlt, FaParking, FaBus, FaWheelchair, FaInstagram, FaFacebook, FaChevronDown, FaChevronUp, FaStar, FaGoogle } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaClock, FaCalendarAlt, FaParking, FaBus, FaWheelchair, FaInstagram, FaFacebook, FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import DemoAction from '@/components/DemoAction'
 
 const ContactClient = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -30,11 +30,11 @@ const ContactClient = () => {
   const faqItems = [
     {
       question: 'Comment réserver un rendez-vous ?',
-      answer: 'La réservation se fait en ligne via notre plateforme de réservation, disponible 24h/24, avec confirmation immédiate. Cliquez sur le bouton "Réserver en ligne" ci-dessus pour accéder directement à notre agenda, ou appelez-nous directement.'
+      answer: 'Cliquez sur le bouton "Réserver en ligne" ci-dessus, ou appelez directement le salon.'
     },
     {
       question: 'Puis-je annuler ou modifier mon rendez-vous ?',
-      answer: 'Oui, vous pouvez annuler ou modifier votre rendez-vous directement depuis votre confirmation de réservation. Les modifications sont gratuites jusqu\'à 24h avant le rendez-vous.'
+      answer: 'Oui, prévenez-nous au moins 24h avant votre rendez-vous, sans frais.'
     },
     {
       question: 'Le salon propose-t-il des cartes cadeaux ?',
@@ -145,14 +145,13 @@ const ContactClient = () => {
                   <p className="text-dark/70 mb-6">
                     Réservez votre moment de bien-être en quelques clics
                   </p>
-                  <a
-                    href="tel:0612345678"
+                  <DemoAction
                     className="btn-primary w-full text-center text-lg py-4 mb-4 hover:scale-105 transition-transform"
                   >
                     Réserver en ligne
-                  </a>
+                  </DemoAction>
                   <p className="text-center text-dark/60 text-sm">
-                    Réservation gratuite • Confirmation immédiate • Disponible 24h/24
+                    Réservation sans frais, en ligne ou par téléphone
                   </p>
                 </div>
               </div>
@@ -230,9 +229,9 @@ const ContactClient = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-dark mb-1">Téléphone</h4>
-                  <a href="tel:0612345678" className="text-dark/70 hover:text-gold transition-colors">
-                    06 12 34 56 78
-                  </a>
+                  <DemoAction kind="appeler" className="text-dark/70 hover:text-gold transition-colors">
+                    Appeler le salon
+                  </DemoAction>
                 </div>
                 <div>
                   <h4 className="font-medium text-dark mb-1">Urgences</h4>
@@ -298,6 +297,7 @@ const ContactClient = () => {
 
         {/* 4. Section FAQ */}
         <motion.section
+          id="faq"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -352,46 +352,6 @@ const ContactClient = () => {
           </div>
         </motion.section>
 
-        {/* 5. Encart des avis Google */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto border border-gold/20">
-            <h3 className="font-serif text-2xl text-dark mb-6">Nos clients nous recommandent</h3>
-
-            {/* Badge de note compact */}
-            <div className="inline-flex items-center bg-gradient-to-r from-gold/5 to-purple-accent/5 border border-gold/30 rounded-full px-6 py-3 space-x-3 mb-6">
-              <div className="flex items-center space-x-1">
-                <FaStar className="text-gold" />
-                <FaStar className="text-gold" />
-                <FaStar className="text-gold" />
-                <FaStar className="text-gold" />
-                <FaStar className="text-gold" />
-              </div>
-              <span className="text-dark font-bold text-lg">5,0 ★</span>
-              <span className="text-dark/50">—</span>
-              <span className="text-dark/80 font-medium">45 avis clients</span>
-              <FaGoogle className="text-gray-500" />
-            </div>
-
-            <p className="text-dark/70 mb-6">
-              Découvrez les témoignages de nos clients satisfaits
-            </p>
-
-            <Link
-              href="/a-propos"
-              className="btn-secondary px-6 py-3 text-base font-semibold hover:bg-gold/5 transition-colors inline-flex items-center justify-center"
-            >
-              <FaGoogle className="mr-2" />
-              Voir tous nos avis
-            </Link>
-          </div>
-        </motion.section>
-
         {/* 6. Section finale CTA */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
@@ -408,14 +368,13 @@ const ContactClient = () => {
               Notre équipe est à votre écoute pour vous orienter vers la prestation
               la plus adaptée à vos besoins.
             </p>
-            <a
-              href="tel:0612345678"
+            <DemoAction
               className="btn-primary px-10 py-5 text-xl font-semibold hover:scale-105 transition-transform inline-flex items-center"
             >
               Réserver maintenant
-            </a>
+            </DemoAction>
             <p className="text-dark/60 text-sm mt-6">
-              Ou contactez-nous au <a href="tel:0612345678" className="text-gold hover:text-gold-600 transition-colors font-medium">06 12 34 56 78</a> pour toute question
+              Une question ? <DemoAction kind="appeler" className="text-gold hover:text-gold-600 transition-colors font-medium">Appelez le salon</DemoAction>
             </p>
           </div>
         </motion.section>

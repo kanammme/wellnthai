@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaStar, FaArrowRight, FaGift, FaBaby, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import { FaArrowRight, FaGift, FaBaby, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import DemoAction from '@/components/DemoAction'
 
 const categories = [
   { id: 'huiles-bio', label: 'Huiles bio' },
@@ -143,19 +144,6 @@ const PrestationsPage = () => {
             et techniques modernes de relaxation.
           </p>
 
-          {/* Badge note */}
-          <div className="inline-flex items-center bg-white/80 backdrop-blur-sm border border-gold/20 rounded-full px-6 py-3 space-x-3 shadow-lg">
-            <div className="flex items-center space-x-1">
-              <FaStar className="text-gold" />
-              <FaStar className="text-gold" />
-              <FaStar className="text-gold" />
-              <FaStar className="text-gold" />
-              <FaStar className="text-gold" />
-            </div>
-            <span className="text-dark font-semibold">5,0</span>
-            <span className="text-dark/50">—</span>
-            <span className="text-dark/80">45 clients satisfaits</span>
-          </div>
         </motion.div>
 
         {/* Barre de navigation sticky par catégories */}
@@ -212,12 +200,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -271,12 +258,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -318,12 +304,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -365,12 +350,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -417,12 +401,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -464,12 +447,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -511,12 +493,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -561,12 +542,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -621,12 +601,11 @@ const PrestationsPage = () => {
                       <div className="text-2xl font-bold text-dark">{prestation.price}</div>
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
-                    <a
-                      href="tel:0612345678"
+                    <DemoAction
                       className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
-                    </a>
+                    </DemoAction>
                   </div>
                 </div>
               ))}
@@ -659,16 +638,15 @@ const PrestationsPage = () => {
                 Prêt à réserver votre moment de bien-être ?
               </h3>
 
-              <a
-                href="tel:0612345678"
+              <DemoAction
                 className="inline-flex items-center bg-gold text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-4"
               >
                 Réserver en ligne
                 <FaArrowRight className="ml-3" />
-              </a>
+              </DemoAction>
 
               <p className="text-dark/60 text-sm mt-4">
-                Réservation gratuite, confirmation immédiate, disponible 24h/24
+                Réservation sans frais, en ligne ou par téléphone
               </p>
             </div>
           </div>

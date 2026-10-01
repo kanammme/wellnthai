@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Lightbox from '@/components/Lightbox'
 import { FaSearch, FaMapMarkerAlt } from 'react-icons/fa'
 import Link from 'next/link'
+import DemoAction from '@/components/DemoAction'
 
 const galleryImages = [
   {
@@ -166,12 +167,11 @@ export default function GaleriePage() {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:0612345678"
+              <DemoAction
                 className="btn-primary px-8 py-4 text-lg font-semibold hover:scale-105 transition-transform"
               >
                 Réserver votre moment bien-être
-              </a>
+              </DemoAction>
 
               <Link
                 href="/contact"
