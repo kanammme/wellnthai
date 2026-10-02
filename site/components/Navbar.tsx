@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import DemoAction from '@/components/DemoAction'
@@ -9,7 +10,11 @@ import DemoAction from '@/components/DemoAction'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
-  const [navbarOpacity, setNavbarOpacity] = useState(0.4) // Opacité pour desktop
+  const pathname = usePathname()
+  // Fond translucide seulement sur le Hero sombre de l'accueil ; ailleurs (pages crème),
+  // un fond à 40 % donnait une bande grise
+  const minOpacity = pathname === '/' ? 0.4 : 0.92
+  const [navbarOpacity, setNavbarOpacity] = useState(minOpacity) // Opacité pour desktop
 
   // Références pour éviter les problèmes de fermeture
   const isMenuOpenRef = useRef(isMenuOpen)
@@ -22,9 +27,12 @@ const Navbar = () => {
       const isMobile = window.innerWidth < 768
 
 
-      // Mise à jour de l'opacité pour desktop (transparent → opaque au scroll)
-      if (!isMobile) {
-        const opacity = Math.min(0.9, Math.max(0.4, 0.4 + (currentScrollY / 100) * 0.5))
+      // Mise à jour de l'opacité pour desktop (transparent → opaque au scroll),
+      // fond quasi opaque sur mobile
+      if (isMobile) {
+        setNavbarOpacity(0.95)
+      } else {
+        const opacity = Math.max(minOpacity, Math.min(0.92, 0.4 + (currentScrollY / 100) * 0.5))
         setNavbarOpacity(opacity)
       }
 
@@ -71,7 +79,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', throttledScroll)
     }
-  }, []) // Pas de dépendances pour éviter les cycles
+  }, [minOpacity]) // Recalculé au changement de page uniquement
 
   const navItems = [
     { name: 'Accueil', href: '/' },
@@ -93,7 +101,7 @@ const Navbar = () => {
       className={navbarClasses}
       style={!isMenuOpen ? { backgroundColor: `rgba(28, 28, 28, ${navbarOpacity})` } : {}}
     >
-      <div className="container-wide py-3">
+      <div className="container-wide px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
           {/* Logo - lockup vertical compact */}
           <Link href="/" className="flex flex-col items-center justify-center group py-1">
@@ -106,9 +114,9 @@ const Navbar = () => {
                 className="object-contain"
               />
             </div>
-            <h1 className="font-serif text-sm md:text-base font-normal text-cream tracking-wider group-hover:text-gold/90 transition-colors duration-300 leading-tight">
+            <span className="block font-serif text-sm md:text-base font-normal text-cream tracking-wider group-hover:text-gold/90 transition-colors duration-300 leading-tight">
               Wellnessthaii
-            </h1>
+            </span>
           </Link>
 
           {/* Desktop Navigation - version minimaliste */}

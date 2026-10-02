@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaMapMarkerAlt, FaClock, FaCalendarAlt, FaParking, FaBus, FaWheelchair, FaInstagram, FaFacebook, FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import DemoAction from '@/components/DemoAction'
@@ -8,23 +8,24 @@ import DemoAction from '@/components/DemoAction'
 const ContactClient = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
-  // Fonction pour obtenir le jour actuel (0 = dimanche, 1 = lundi, ...)
-  const getCurrentDay = () => {
+  // Jour actuel calculé après le montage : la page est générée à la compilation,
+  // un calcul au rendu donnait un jour différent côté serveur (erreur d'hydratation)
+  const [currentDay, setCurrentDay] = useState<number | null>(null)
+
+  useEffect(() => {
     const today = new Date().getDay() // 0 = dimanche, 1 = lundi, ...
     // Convertir pour correspondre à notre tableau (lundi = 0)
-    return today === 0 ? 6 : today - 1
-  }
-
-  const currentDay = getCurrentDay()
+    setCurrentDay(today === 0 ? 6 : today - 1)
+  }, [])
 
   const horaires = [
-    { jour: 'Lundi', heures: '10:00 - 19:00', isClosed: false },
-    { jour: 'Mardi', heures: 'Fermé', isClosed: true },
+    { jour: 'Lundi', heures: 'Fermé', isClosed: true },
+    { jour: 'Mardi', heures: '10:00 - 19:00', isClosed: false },
     { jour: 'Mercredi', heures: '10:00 - 19:00', isClosed: false },
     { jour: 'Jeudi', heures: '10:00 - 19:00', isClosed: false },
     { jour: 'Vendredi', heures: '10:00 - 19:00', isClosed: false },
     { jour: 'Samedi', heures: '10:00 - 19:00', isClosed: false },
-    { jour: 'Dimanche', heures: '13:00 - 18:00', isClosed: false },
+    { jour: 'Dimanche', heures: 'Fermé', isClosed: true },
   ]
 
   const faqItems = [
@@ -106,19 +107,19 @@ const ContactClient = () => {
                     {horaires.map((horaire, index) => (
                       <div
                         key={horaire.jour}
-                        className={`flex justify-between items-center p-3 rounded-lg ${index === currentDay ? 'bg-gold/10 border border-gold/30' : ''} ${horaire.isClosed ? 'bg-gray-50 text-gray-400' : ''}`}
+                        className={`flex justify-between items-center p-3 rounded-lg ${index === currentDay ? 'bg-gold/10 border border-gold/30' : ''} ${horaire.isClosed ? 'bg-gray-50 text-gray-500' : ''}`}
                       >
                         <div className="flex items-center gap-3">
-                          <span className={`font-medium ${index === currentDay ? 'text-gold' : horaire.isClosed ? 'text-gray-400' : 'text-dark'}`}>
+                          <span className={`font-medium ${index === currentDay ? 'text-gold-800' : horaire.isClosed ? 'text-gray-500' : 'text-dark'}`}>
                             {horaire.jour}
                           </span>
                           {index === currentDay && (
-                            <span className="text-xs bg-gold text-white px-2 py-1 rounded-full">
+                            <span className="text-xs bg-gold text-dark px-2 py-1 rounded-full">
                               Aujourd&apos;hui
                             </span>
                           )}
                         </div>
-                        <span className={horaire.isClosed ? 'text-gray-400' : 'text-dark/70 font-medium'}>
+                        <span className={horaire.isClosed ? 'text-gray-500' : 'text-dark/70 font-medium'}>
                           {horaire.heures}
                         </span>
                       </div>
@@ -229,7 +230,7 @@ const ContactClient = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-dark mb-1">Téléphone</h4>
-                  <DemoAction kind="appeler" className="text-dark/70 hover:text-gold transition-colors">
+                  <DemoAction kind="appeler" className="inline-flex items-center min-h-[44px] text-dark/70 hover:text-gold-800 transition-colors">
                     Appeler le salon
                   </DemoAction>
                 </div>
@@ -374,7 +375,7 @@ const ContactClient = () => {
               Réserver maintenant
             </DemoAction>
             <p className="text-dark/60 text-sm mt-6">
-              Une question ? <DemoAction kind="appeler" className="text-gold hover:text-gold-600 transition-colors font-medium">Appelez le salon</DemoAction>
+              Une question ? <DemoAction kind="appeler" className="text-gold-800 hover:text-gold-700 underline underline-offset-2 transition-colors font-medium">Appelez le salon</DemoAction>
             </p>
           </div>
         </motion.section>

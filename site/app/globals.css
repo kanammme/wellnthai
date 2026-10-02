@@ -59,7 +59,7 @@
   }
 
   .btn-secondary {
-    @apply border-2 border-gold text-gold font-semibold py-3 px-6 rounded-full hover:bg-gold/10 transition-all duration-300;
+    @apply border-2 border-gold-700 text-gold-800 font-semibold py-3 px-6 rounded-full hover:bg-gold/10 transition-all duration-300;
   }
 
   .section-padding {
@@ -90,5 +90,16 @@
 
   .bg-cream-section {
     @apply bg-cream text-dark;
+  }
+}
+/* Réglage « réduire les animations » : animations CSS et défilement doux coupés */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

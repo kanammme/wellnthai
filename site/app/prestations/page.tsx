@@ -147,14 +147,14 @@ const PrestationsPage = () => {
         </motion.div>
 
         {/* Barre de navigation sticky par catégories */}
-        <div className="sticky top-20 z-40 mt-12 mb-8">
+        <div className="md:sticky md:top-20 z-40 mt-12 mb-8">
           <div className="bg-white/95 backdrop-blur-md border border-gold/20 rounded-xl shadow-lg px-4 py-3">
             <div className="flex flex-wrap gap-2 justify-center">
               {categories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => scrollToCategory(category.id)}
-                  className="px-4 py-2 text-sm font-medium text-dark/70 hover:text-gold hover:bg-gold/5 rounded-full transition-all duration-200 border border-transparent hover:border-gold/30"
+                  className="px-4 py-2 min-h-[44px] text-sm font-medium text-dark/70 hover:text-gold-800 hover:bg-gold/5 rounded-full transition-all duration-200 border border-transparent hover:border-gold/30"
                 >
                   {category.label}
                 </button>
@@ -175,7 +175,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Massages aux huiles bio
               </h2>
               <p className="text-dark/60">
@@ -201,7 +201,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -221,7 +221,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Les huiles parfumées
               </h2>
               <p className="text-dark/60">
@@ -244,7 +244,7 @@ const PrestationsPage = () => {
                         {prestation.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="px-3 py-1 bg-gold/10 text-gold-700 rounded-full text-xs font-medium"
+                            className="px-3 py-1 bg-gold/10 text-gold-800 rounded-full text-xs font-medium"
                           >
                             {tag}
                           </span>
@@ -259,7 +259,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -279,7 +279,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Massage aux pierres chaudes
               </h2>
               <p className="text-dark/60">
@@ -305,7 +305,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -325,7 +325,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Massages sans huiles
               </h2>
               <p className="text-dark/60">
@@ -351,7 +351,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -371,7 +371,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Les formules
               </h2>
               <p className="text-dark/60">
@@ -402,7 +402,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -422,7 +422,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Massages de 30min
               </h2>
               <p className="text-dark/60">
@@ -448,7 +448,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -468,7 +468,7 @@ const PrestationsPage = () => {
             className="scroll-mt-24"
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl md:text-4xl text-gold mb-3">
+              <h2 className="font-serif text-3xl md:text-4xl text-gold-700 mb-3">
                 Massage plantaire
               </h2>
               <p className="text-dark/60">
@@ -494,7 +494,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -516,7 +516,7 @@ const PrestationsPage = () => {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <FaBaby className="text-gold text-2xl" />
-                <h2 className="font-serif text-3xl md:text-4xl text-gold">
+                <h2 className="font-serif text-3xl md:text-4xl text-gold-700">
                   Femmes enceintes
                 </h2>
               </div>
@@ -543,7 +543,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -565,13 +565,13 @@ const PrestationsPage = () => {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <FaGift className="text-gold text-2xl" />
-                <h2 className="font-serif text-3xl md:text-4xl text-gold">
+                <h2 className="font-serif text-3xl md:text-4xl text-gold-700">
                   Coffrets cadeaux
                 </h2>
               </div>
               <div className="bg-gradient-to-r from-gold/20 to-purple-accent/20 border border-gold/30 rounded-xl p-4 mb-6">
-                <p className="text-dark font-medium text-center">
-                  🎁 Faites plaisir à vos proches
+                <p className="text-dark font-medium text-center flex items-center justify-center gap-2">
+                  <FaGift className="text-gold-700" aria-hidden="true" />Faites plaisir à vos proches
                 </p>
                 <p className="text-dark/60 text-center text-sm mt-1">
                   Les coffrets sont valables 12 mois après la date d'achat
@@ -602,7 +602,7 @@ const PrestationsPage = () => {
                       <div className="text-dark/60 text-sm">{prestation.duration}</div>
                     </div>
                     <DemoAction
-                      className="bg-gold text-white font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
+                      className="bg-gold text-dark font-semibold px-6 py-3 rounded-lg hover:bg-gold-600 transition-colors whitespace-nowrap text-center"
                     >
                       Choisir
                     </DemoAction>
@@ -639,7 +639,7 @@ const PrestationsPage = () => {
               </h3>
 
               <DemoAction
-                className="inline-flex items-center bg-gold text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-4"
+                className="inline-flex items-center bg-gold text-dark font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-4"
               >
                 Réserver en ligne
                 <FaArrowRight className="ml-3" />

@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className="font-serif text-2xl font-bold text-cream mb-0.5">Wellnessthaii</h2>
-                <p className="text-gold/70 text-sm">Massage bien-être thaïlandais</p>
+                <p className="text-gold/80 text-sm">Massage bien-être thaïlandais</p>
               </div>
             </div>
             <p className="text-cream/80">
@@ -49,7 +49,7 @@ const Footer = () => {
                 <FaPhone className="text-gold" />
                 <div>
                   <p className="font-medium text-cream">Téléphone</p>
-                  <DemoAction kind="appeler" className="text-cream/80 hover:text-gold transition-colors">
+                  <DemoAction kind="appeler" className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors">
                     Appeler le salon
                   </DemoAction>
                 </div>
@@ -70,40 +70,40 @@ const Footer = () => {
           {/* Quick Links & Reservation */}
           <div className="space-y-6">
             <h3 className="font-serif text-xl font-bold text-gold">Navigation</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-x-4">
               <Link
                 href="/prestations"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 Prestations
               </Link>
               <Link
                 href="/galerie"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 Galerie
               </Link>
               <Link
                 href="/a-propos"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 À propos
               </Link>
               <Link
                 href="/contact"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 Contact
               </Link>
               <Link
                 href="/contact#faq"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 FAQ
               </Link>
               <Link
                 href="/mentions-legales"
-                className="text-cream/80 hover:text-gold transition-colors"
+                className="inline-flex items-center min-h-[44px] text-cream/80 hover:text-gold transition-colors"
               >
                 Mentions légales
               </Link>

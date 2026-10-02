@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaLeaf, FaBalanceScale, FaHeart, FaHands, FaHeartbeat, FaBrain, FaArrowRight } from 'react-icons/fa'
+import { FaLeaf, FaBalanceScale, FaHeart, FaHands, FaHeartbeat, FaBrain, FaArrowRight, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import DemoAction from '@/components/DemoAction'
 
 export default function AboutPage() {
@@ -310,15 +310,15 @@ export default function AboutPage() {
             {/* Informations complémentaires */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-dark/80">
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
-                <h4 className="font-semibold text-dark mb-2">📍 Nancy Centre</h4>
+                <h3 className="font-semibold text-dark mb-2 flex items-center justify-center gap-2"><FaMapMarkerAlt className="text-gold-700" aria-hidden="true" />Nancy Centre</h3>
                 <p className="text-sm">Centre-ville de Nancy</p>
               </div>
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
-                <h4 className="font-semibold text-dark mb-2">⏰ Horaires</h4>
+                <h3 className="font-semibold text-dark mb-2 flex items-center justify-center gap-2"><FaClock className="text-gold-700" aria-hidden="true" />Horaires</h3>
                 <p className="text-sm">Du mardi au samedi • 10h-19h</p>
               </div>
               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4">
-                <h4 className="font-semibold text-dark mb-2">🌿 Sur rendez-vous</h4>
+                <h3 className="font-semibold text-dark mb-2 flex items-center justify-center gap-2"><FaLeaf className="text-gold-700" aria-hidden="true" />Sur rendez-vous</h3>
                 <p className="text-sm">Massages de 30 min à 2h</p>
               </div>
             </div>

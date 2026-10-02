@@ -17,7 +17,7 @@ const prestations = [
     price: '80€',
     image: '/images/prestations/thai.png',
     description: 'L\'art d\'harmoniser les énergies. Pressions, étirements et mobilisations pour libérer les tensions et retrouver calme et clarté d\'esprit.',
-    colorClass: 'bg-gold-500',
+    colorClass: 'bg-gold-500 !text-dark',
     textColorClass: 'text-gold-600',
   },
   {

@@ -58,7 +58,7 @@ export default function MentionsLegalesPage() {
           <h2 className="font-serif text-2xl text-dark mb-3">Crédits</h2>
           <p className="text-dark/70 leading-relaxed">
             Conception, design et développement :{' '}
-            <a href="https://al-h.fr" className="text-gold hover:text-gold-600 underline underline-offset-2">
+            <a href="https://al-h.fr" className="text-gold-800 hover:text-gold-700 underline underline-offset-2">
               AL H · Digital Studio
             </a>
             . Les photographies et le logo ont été générés par intelligence artificielle pour ce

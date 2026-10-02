@@ -155,7 +155,7 @@ const HeroSection = () => {
             </DemoAction>
             <Link
               href="/prestations"
-              className="text-base font-light text-cream/90 hover:text-gold border-b border-transparent hover:border-gold/50 pb-1 px-10 py-3.5 transition-all duration-200 tracking-wide hover:-translate-y-1"
+              className="text-base font-light text-cream/90 hover:text-gold border-b border-transparent hover:border-gold/50 pb-1 px-10 py-3.5 min-h-[44px] transition-all duration-200 tracking-wide hover:-translate-y-1"
             >
               Découvrir nos prestations
             </Link>

@@ -175,7 +175,7 @@ export default function GaleriePage() {
 
               <Link
                 href="/contact"
-                className="btn-secondary px-8 py-4 text-lg font-semibold hover:bg-cream/10 transition-colors inline-flex items-center justify-center"
+                className="btn-secondary !border-gold !text-gold px-8 py-4 text-lg font-semibold hover:bg-cream/10 transition-colors inline-flex items-center justify-center"
               >
                 <FaMapMarkerAlt className="mr-2" />
                 Nous trouver

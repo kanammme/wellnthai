@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import DemoRibbon from '@/components/DemoRibbon'
+import MotionProvider from '@/components/MotionProvider'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <DemoRibbon />
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <MotionProvider>
+          <DemoRibbon />
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   )
